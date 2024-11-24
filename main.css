@@ -1248,3 +1248,114 @@ dd {
 
 
 
+
+
+/* Styles for Phones (max-width: 480px) */
+@media (max-width: 780px) {
+
+    /* Header Adjustments */
+    header {
+        flex-direction: column;
+        padding: 1em;
+        align-items: flex-start;
+    }
+
+    .logo-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-title h1 {
+        font-size: 1em; /* Smaller title size for compact layout */
+    }
+
+    #navigation {
+        flex-direction: column;
+        gap: 1em; /* Increase space between items */
+    }
+
+    #navigation a {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+
+    /* Offers Section */
+    .offers-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em; /* Reduce gaps for compact design */
+    }
+
+    .offer {
+        width: 100%;
+        max-width: 300px; /* Center and resize offers for smaller screens */
+    }
+
+    /* Customer Reviews */
+    .custReview-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .custReview {
+        width: 100%;
+        max-width: 300px;
+        text-align: left; /* Maintain readability on smaller screens */
+    }
+
+    .custReview pre {
+        font-size: 0.9em;
+    }
+
+    .custReview p {
+        font-size: 0.8em;
+    }
+
+    /* Category Section */
+    .categories-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .category {
+        flex: 1 1 100%;
+        max-width: 150px; /* Resize category cards for narrow screens */
+    }
+
+    .category img {
+        width: 80px; /* Smaller image for compact display */
+        height: 80px;
+    }
+
+    .category p {
+        font-size: 0.9em; /* Reduce font size to fit text better */
+    }
+
+    /* Vision Section */
+    dl {
+        font-size: 0.9em; /* Resize text for smaller viewports */
+        padding: 1em;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .footer-left,
+    .footer-right {
+        font-size: 0.8em;
+        margin-bottom: 0.5em;
+    }
+
+    /* Toggle Theme Button */
+    #toggle-theme-button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+}
