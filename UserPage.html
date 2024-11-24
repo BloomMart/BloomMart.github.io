@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@DrSahar</title>
+    <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
+    <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+    <script src="themes.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="images/Logo.png" alt="Website Logo">
+                </a>
+            </div>
+            <h1>Bloom Mart</h1>
+        </div>
+
+        <nav id="navigation-container">
+            <div id="navigation"> 
+                <a href="SellerDash.html">Seller's dashboard</a>
+                <a href="UserPage.html">User's page</a> 
+                <div class="dropdown">
+                    <label for="categories">Choose a category:</label>
+                    <select id="categories" onchange="location = this.value;">
+                        <option value="#" disabled selected>Categories</option>
+                        <option value="category1.html">Furniture</option>
+                        <option value="category2.html">Beauty</option>
+                        <option value="category3.html">Electronics</option>
+                    </select>
+                </div>
+                <a href="ViewCart.html">
+                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="Home.html">Home</a> &gt; 
+        <span>@DrSahar</span>
+    </nav>
+
+    <main id="UserPageMain">
+        
+        <div class="UserPage">
+            <div class="UserInfo">
+                <div class="ProfilePicture"></div>
+                <div class="UserDetails">
+                    <p>@DrSahar</p>
+                    <p>sahar@gmail.com</p>
+                    <p>+966555555555</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="UserLinks">
+                <a href="ViewCart.html" class="LinkButton">My Cart</a>
+                <a href="OrderHistory.html" class="LinkButton">Order History</a>
+                <a href="OrderEval.html" class="LinkButton">Products Evaluation</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Contact Us:</p>
+            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+        </div>
+        <div class="footer-right">
+            &copy; 2024 BloomMart
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Mart</title>
+    <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
+    <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+    <script src="HomePageScript.js" defer></script>
+    <script src="themes.js"></script>
+</head>
+<body class="light-theme">
+    <header>
+        <div class="logo-title">
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="images/Logo.png" alt="Website Logo">
+                </a>
+            </div>
+            <h1>Bloom Mart</h1>
+        </div>
+
+        <nav id="navigation-container">
+            <div id="navigation"> 
+                <a href="SellerDash.html">Seller's dashboard</a>
+                <a href="UserPage.html">User's page</a> 
+                <div class="dropdown">
+                    <label for="categories">Choose a category:</label>
+                    <select id="categories" onchange="location = this.value;">
+                        <option value="#" disabled selected>Categories</option>
+                        <option value="category1.html">Furniture</option>
+                        <option value="category2.html">Beauty</option>
+                        <option value="category3.html">Electronics</option>
+                    </select>
+                </div>
+                <a href="ViewCart.html">
+                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                </a>
+            </div>
+        </nav>
+        <button id="toggle-theme-button" onclick="toggleTheme()">Toggle Theme</button>
+
+    </header>
+    <main id="HomePageMain">
+
+        <div id="WeekDate"></div>
+        <dl>
+            <dt><strong>Vision</strong></dt>
+            <dd>To create an inclusive marketplace where shopping is easy and sellers can grow their businesses, offering a wide range of products and a seamless experience for all.</dd>
+        </dl>
+        <div class="category-section">
+            <div class="half-circle"></div>
+            <div class="categories-container">
+               <a href="Category1.html" class="category">
+                  <img src="images/sofaHomePage.webp" alt="Home">
+                  <p>Furniture</p>
+               </a>
+               <a href="Category2.html" class="category">
+                  <img src="images/lipstick.jpg" alt="Beauty">
+                  <p>Beauty</p>
+               </a>
+               <a href="Category3.html" class="category">
+                  <img src="images/LaptopHome.png" alt="Electronics">
+                  <p>Electronics</p>
+               </a>
+            </div>
+         </div>
+         
+        <div class="offers-wrapper">
+            <h2 class="h2Uni">Special Offers</h2>
+            <div class="offers-container">
+                <div class="offer">
+                    <img src="images/eyeliner.jpg" alt="Eyeliner">
+                    <h3>Buy One, Get One Free!</h3>
+                    <p>Enjoy our first offer where you can buy one item and get another absolutely free! A fantastic deal for our valued customers.</p>
+                </div>
+                <div class="offer">
+                    <img src="images/sofaOffer.png" alt="Beige Sofa">
+                    <h3>20% Off Your Next Purchase</h3>
+                    <p>Take advantage of our second offer! Receive a 20% discount on your next purchase and save big on your favorite items.</p>
+                </div>
+                <div class="offer">
+                    <img src="images/brushes.webp" alt="Makeup Brushes">
+                    <h3>Free Shipping on Orders Over $50</h3>
+                    <p>With our third offer, enjoy free shipping when you spend over $50. It’s the perfect time to stock up on what you love!</p>
+                </div>
+                <div class="offer hidden">
+                    <img src="images/sonyheadphones2.png" alt="Sony Headphones">
+                    <h3>Flash Sale – 24-Hour Discounts!</h3>
+                    <p>Keep an eye on our website for flash sales every weekend! Enjoy special discounts for 24 hours only on selected items.</p>
+                </div>
+                <div class="offer hidden">
+                    <img src="images/CoffeeTableOffer.png" alt="Coffee Table">
+                    <h3>Seasonal Sale - Up to 50% Off</h3>
+                    <p>Get ready for our seasonal sale! Enjoy discounts of up to 50% on select items. Hurry, while supplies last!</p>
+                </div>
+                <div class="offer hidden">
+                    <img src="images/wallFrame.png" alt="Wall Frame">
+                    <h3>Holiday Bundle Deals</h3>
+                    <p>Get ready for the holidays with our special bundle offers. Buy gift sets at a discounted price and make your holiday shopping easier!</p>
+                </div>
+            </div>
+            <button id="toggleButton" class="toggle-button">Show More</button>
+        </div>        
+        <div class="reviews-wrapper">
+            <h2 class="h2Uni">Customer Reviews</h2>
+            <div class="custReview-container">
+                <div class="custReview" 
+                     data-customer-name="@raneem12"
+                     data-product-name="Blush & Bloom"
+                     data-seller-name="Bloom Mart"
+                     data-rating="4"
+                     data-feedback="Absolutely love this store! The buy one, get one free offer saved me a ton. Plus, my items arrived quickly and in perfect condition.">
+                    <pre><strong>@raneem12</strong> 4 <img src="images/25069.png" alt="star" width="12" height="12"></pre>
+                    <p>Absolutely love this store! The buy one, get one free offer saved me a ton...</p>
+                    <h3 class="seller-name-box">Bloom Mart</h3>
+                </div>
+                <div class="custReview" 
+                     data-customer-name="@ftoon01"
+                     data-product-name="Living Luxe"
+                     data-seller-name="Home Essentials"
+                     data-rating="5"
+                     data-feedback="This store never disappoints! The offers are always worth it, and the quality of the products is outstanding.">
+                    <pre><strong>@ftoon01</strong> 5 <img src="images/25069.png" alt="star" width="12" height="12"></pre>
+                    <p>This store never disappoints! The offers are always worth it...</p>
+                    <h3 class="seller-name-box">Home Essentials</h3>
+                </div>
+                <div class="custReview" 
+                     data-customer-name="@ghadeer33"
+                     data-product-name="Innovatech"
+                     data-seller-name="Tech World"
+                     data-rating="4"
+                     data-feedback="Good deals and fast shipping! I appreciate the variety of options available. Just wish there were more sizes!">
+                    <pre><strong>@ghadeer33</strong> 4 <img src="images/25069.png" alt="star" width="12" height="12"></pre>
+                    <p>Good deals and fast shipping! I appreciate the variety...</p>
+                    <h3 class="seller-name-box">Tech World</h3>
+                </div>
+            </div>
+            <div id="reviewTooltip" class="tooltip hidden"></div>
+        </div>
+        
+        
+        
+    </main>
+    <footer>
+        <div class="footer-left">
+            <p>Contact Us:</p>
+            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+        </div>
+        <div class="footer-right">
+            &copy; 2024 BloomMart
+        </div>
+    </footer>
+</body>
+</html>

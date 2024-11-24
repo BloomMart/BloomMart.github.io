@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Furniture</title>
+        <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
+        <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+        <script src="themes.js"></script>
+        <script src="categoryjs.js"></script>
+        <script src="ViewCart.js"></script>
+        <script src="add.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-title">
+                <div id="logo">
+                    <a href="Home.html">
+                        <img src="images/Logo.png" alt="Website Logo">
+                    </a>
+                </div>
+                <h1>Bloom Mart</h1>
+            </div>
+            <nav id="navigation-container">
+                <div id="navigation"> 
+                    <a href="SellerDash.html">Seller's dashboard</a>
+                    <a href="UserPage.html">User's page</a> 
+                    <div class="dropdown">
+                        <label for="categories">Choose a category:</label>
+                        <select id="categories" onchange="location = this.value;">
+                            <option value="#" disabled selected>Categories</option>
+                            <option value="category1.html">Furniture</option>
+                            <option value="category2.html">Beauty</option>
+                            <option value="category3.html">Electronics</option>
+                        </select>
+                    </div>
+                    <a href="ViewCart.html" id="viewCartButton">
+                        <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <nav class="breadcrumb">
+            <a href="Home.html">Home</a> &gt; 
+            <span>Furniture</span>
+        </nav>
+
+        <main class="CategoriesMain">
+            <div class="sort-container">
+                <label for="sortNamePrice">Sort items by:</label>
+                <select id="sortNamePrice" onchange="sortProducts()">
+                    <option disabled selected>Sort items by</option>
+                    <optgroup label="Price:">
+                        <option value="price-asc">low to high</option>
+                        <option value="price-desc">high to low</option>
+                    </optgroup>
+                    <optgroup label="Name:">
+                        <option value="name-asc">A-Z</option>
+                        <option value="name-desc">Z-A</option>
+                    </optgroup>
+                </select>
+    
+            </div>
+
+        
+            <div class="products-container">
+            <ul class="ulCategory"> 
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/singleSofa.jpg" alt="Single Sofa" class="product-image">
+                                <h2 class="product-title">Single Sofa</h2>
+                                <p>A stylish single sofa offering comfort and modern design, perfect for small spaces.</p>
+                                <div class="product-rating">★★★★☆ (38)</div>
+                                <div class="product-price">600 SAR</div>
+                                <div class="product-seller">Living Lux</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/candlestick-18th-century-ch-18640197-ebf3f2-1024.jpg" alt="Candle Stick" class="product-image">
+                                <h2 class="product-title">Candle Stick</h2>
+                                <p>A decorative candlestick that adds elegance and warmth to any room, adorned with vibrant colors.</p>
+                                <div class="product-rating">★★★☆☆ (12)</div>
+                                <div class="product-price">120 SAR</div>
+                                <div class="product-seller">Antique Attic</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/coffeeTable.jpg" alt="Coffee Table" class="product-image">
+                                <h2 class="product-title">Coffee Table</h2>
+                                <p>A chic coffee table that serves as a centerpiece for your living room, combining style and functionality.</p>
+                                <div class="product-rating">★★☆☆☆ (19)</div>
+                                <div class="product-price">199 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/photo-of-a-bed-with-a-blue-blanket-and-wooden-headboard.jpeg" alt="Bed" class="product-image">
+                                <h2 class="product-title">Bed</h2>
+                                <p>A cozy bed designed for comfort and support, perfect for a good night's sleep.</p>
+                                <div class="product-rating">★★★☆☆ (4)</div>
+                                <div class="product-price">299 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/cup_tee_teacup_glass_0.jpg" alt="Glass Cup" class="product-image">
+                                <h2 class="product-title">Glass Cup</h2>
+                                <p>A beautiful glass cup that enhances your beverage experience, ideal for coffee or tea.</p>
+                                <div class="product-rating">★★★★☆ (000)</div>
+                                <div class="product-price">70 SAR</div>
+                                <div class="product-seller">Modern Muse</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/dressingTable.jpg" alt="Dressing Table" class="product-image">
+                                <h2 class="product-title">Dressing Table</h2>
+                                <p>A stylish dressing table that provides a functional space for your beauty routine.</p>
+                                <div class="product-rating">★★★★☆ (000)</div>
+                                <div class="product-price">340 SAR</div>
+                                <div class="product-seller">Modern Muse</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/FoodTable.jpg" alt="Dining Table" class="product-image">
+                                <h2 class="product-title">Dining Table</h2>
+                                <p>A spacious dining table, perfect for entertaining, with an elegant design that enhances any room.</p>
+                                <div class="product-rating">★★★★☆ (000)</div>
+                                <div class="product-price">2000 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/frameswall.jpg" alt="Wall Frame" class="product-image">
+                                <h2 class="product-title">Wall Frame</h2>
+                                <p>A decorative wall frame designed to showcase your favorite pictures or artwork.</p>
+                                <div class="product-rating">★★★★☆ (24)</div>
+                                <div class="product-price">89 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/interior-interior-design-furniture-room-preview.jpg" alt="Luxurious Leather Sofa" class="product-image">
+                                <h2 class="product-title">Luxurious Leather Sofa</h2>
+                                <p>A sophisticated leather sofa that adds luxury and comfort to your living room.</p>
+                                <div class="product-rating">★★★★☆ (21)</div>
+                                <div class="product-price">1000 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/seven-plates-from-the-service-of-stadtholder-william-v-25bd6b-1024.jpg" alt="Product Image" class="product-image">
+                                <h2 class="product-title">Decorated Plate</h2>
+                                <p>A beautifully crafted decorative plate perfect for display or serving special occasions.</p>
+                                <div class="product-rating">★★★★☆ (16)</div>
+                                <div class="product-price">110 SAR</div>
+                                <div class="product-seller">Antique Attic</div>
+                            </div>
+                            <div class="CartQuantity11">
+                                <button type="button" class="decrease11">-</button>
+                                <input type="number" class="quantity11" value="1" min="1">
+                                <button type="button" class="increase11">+</button>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+            </ul>  
+            </div>          
+        </main>
+        
+        
+        <footer>
+            <div class="footer-left">
+                <p>Contact Us:</p>
+                <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+                <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+                <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+            </div>
+            <div class="footer-right">
+                &copy; 2024 BloomMart
+            </div>
+        </footer>
+    </body>
+</html>

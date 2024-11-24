@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Beauty</title>
+        <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
+        <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+        <script src="themes.js"></script>
+        <script src="categoryjs.js"></script>
+        <script src="ViewCart.js"></script>
+        <script src="add.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-title">
+                <div id="logo">
+                    <a href="Home.html">
+                        <img src="images/Logo.png" alt="Website Logo">
+                    </a>
+                </div>
+                <h1>Bloom Mart</h1>
+            </div>
+            <nav id="navigation-container">
+                <div id="navigation"> 
+                    <a href="SellerDash.html">Seller's dashboard</a>
+                    <a href="UserPage.html">User's page</a> 
+                    <div class="dropdown">
+                        <label for="categories">Choose a category:</label>
+                        <select id="categories" onchange="location = this.value;">
+                            <option value="#" disabled selected>Categories</option>
+                            <option value="category1.html">Furniture</option>
+                            <option value="category2.html">Beauty</option>
+                            <option value="category3.html">Electronics</option>
+                        </select>
+                    </div>
+                    <a href="ViewCart.html">
+                        <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <nav class="breadcrumb">
+            <a href="Home.html">Home</a> &gt; 
+            <span>Beauty</span>
+        </nav>
+
+        
+        <main class="CategoriesMain">
+            <div class="sort-container">
+                <label for="sortNamePrice">Sort items by:</label>
+                <select id="sortNamePrice">
+                    <option disabled selected>Sort items by</option>
+                    <optgroup label="Price:">
+                        <option>low to high</option>
+                        <option>high to low</option>
+                    </optgroup>
+                    <optgroup label="Name:">
+                        <option>A-Z</option>
+                        <option>Z-A</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            
+                <div class="products-container">
+                    <ul class="ulCategory">
+                    <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/necklace.jpg" alt="necklace" class="product-image">
+                                    <h2 class="product-title">Necklace</h2>
+                                    <p>A charming necklace featuring unique designs, perfect for accessorizing any outfit.</p>
+                                    <div class="product-rating">★★★☆☆ (38)</div>
+                                    <div class="product-price">99 SAR</div>
+                                    <div class="product-seller">The Trinket Store</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/goldNecklace.webp" alt="goldNecklace" class="product-image">
+                                    <h2 class="product-title">Gold Necklace</h2>
+                                    <p>An elegant gold necklace that adds a touch of sophistication and glamour to any ensemble.</p>
+                                    <div class="product-rating">★★★☆☆ (7)</div>
+                                    <div class="product-price">220 SAR</div>
+                                    <div class="product-seller">The Trinket Store</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/bracelet.webp" alt="bracelet" class="product-image">
+                                    <h2 class="product-title">Bracelet</h2>
+                                    <p>A delicate bracelet that complements any look, ideal for casual or formal occasions.</p>
+                                    <div class="product-rating">★★★★☆ (19)</div>
+                                    <div class="product-price">230 SAR</div>
+                                    <div class="product-seller">The Trinket Store</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/brushes.webp" alt="MakeUp Brushes" class="product-image">
+                                    <h2 class="product-title">Make Up Brushes</h2>
+                                    <p>A complete set of makeup brushes for applying and blending makeup flawlessly.</p>
+                                    <div class="product-rating">★★★☆☆ (58)</div>
+                                    <div class="product-price">80 SAR</div>
+                                    <div class="product-seller">Blush & Bloom</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/lipstick.jpg" alt="Lipstick" class="product-image">
+                                    <h2 class="product-title">Lipstick</h2>
+                                    <p>A rich, pigmented lipstick that offers long-lasting color and hydration for beautiful lips.</p>
+                                    <div class="product-rating">★★★★☆ (68)</div>
+                                    <div class="product-price">75 SAR</div>
+                                    <div class="product-seller">Blush & Bloom</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/foundation.webp" alt="Foundation" class="product-image">
+                                    <h2 class="product-title">Foundation</h2>
+                                    <p>A smooth and lightweight foundation providing even coverage and a natural finish.</p>
+                                    <div class="product-rating">★★★★☆ (46)</div>
+                                    <div class="product-price">120 SAR</div>
+                                    <div class="product-seller">Blush & Bloom</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/earings.jpg" alt="Earings" class="product-image">
+                                    <h2 class="product-title">Earings</h2>
+                                    <p>Stylish earrings that enhance your look, available in various designs to suit your taste.</p>
+                                    <div class="product-rating">★★★★☆ (76)</div>
+                                    <div class="product-price">110 SAR</div>
+                                    <div class="product-seller">The Trinket Store</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/palet.webp" alt="Palette" class="product-image">
+                                    <h2 class="product-title">Palette</h2>
+                                    <p>A versatile makeup palette featuring a variety of shades for creating endless looks.</p>
+                                    <div class="product-rating">★★★★☆ (17)</div>
+                                    <div class="product-price">60 SAR</div>
+                                    <div class="product-seller">Blush & Bloom</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/mascara.webp" alt="Mascara" class="product-image">
+                                    <h2 class="product-title">Mascara</h2>
+                                    <p>A volumizing mascara that enhances your lashes for a dramatic effect, perfect for any makeup look.</p>
+                                    <div class="product-rating">★★★★☆ (13)</div>
+                                    <div class="product-price">110 SAR</div>
+                                    <div class="product-seller">Blush & Bloom</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="product-card">
+                                <div class="product-info">
+                                    <img src="images/eyeliner.jpg" alt="eyeliner" class="product-image">
+                                    <h2 class="product-title">Eyeliner</h2>
+                                    <p>A precise eyeliner that glides on smoothly for creating defined lines and bold looks.</p>
+                                    <div class="product-rating">★★★★☆ (16)</div>
+                                    <div class="product-price">105 SAR</div>
+                                    <div class="product-seller">Blush & Bloom</div>
+                                </div>
+                                <div class="CartQuantity11">
+                                    <button type="button" class="decrease11">-</button>
+                                    <input type="number" class="quantity11" value="1" min="1">
+                                    <button type="button" class="increase11">+</button>
+                                </div>
+                                <button class="add-to-cart">
+                                    <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                                </button>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+        </main>
+        
+        
+        <footer>
+            <div class="footer-left">
+                <p>Contact Us:</p>
+                <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+                <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+                <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+            </div>
+            <div class="footer-right">
+                &copy; 2024 BloomMart
+            </div>
+        </footer>
+    </body>
+</html>
