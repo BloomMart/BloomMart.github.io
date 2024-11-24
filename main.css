@@ -16,7 +16,7 @@ body {
     margin-top: 2%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-@media (max-width: 768px) {
+
     header {
         display: flex;
         align-items: center;
@@ -274,7 +274,7 @@ body {
         margin-right: 3.125em;
     }
 
-}
+
 #UserPageMain {
     padding: 1.25em;
     margin-top: 5.625em;
