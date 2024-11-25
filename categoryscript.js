@@ -48,7 +48,7 @@ document.addEventListener('click', (e) => {
     if (!item) return;
 
     const quantityInput = item.querySelector('.quantity11');
-    if (!quantityInput) return; // تحقق من وجود العنصر
+    if (!quantityInput) return; 
 
     const currentValue = parseInt(quantityInput.value, 10) || 1;
     if (e.target.classList.contains('increase11')) {
